@@ -2632,3 +2632,27 @@ org.eclipse.jgit.errors.TransportException: https://github.com/anasegebre/csc207
 
 !ENTRY org.eclipse.egit.ui 4 0 2017-04-09 22:31:23.723
 !MESSAGE Can't connect to any repository: https://github.com/anasegebre/csc207-reading-exercises.git (https://github.com/anasegebre/csc207-reading-exercises.git: error occurred during unpacking on the remote end: index-pack abnormal exit)
+
+!ENTRY org.eclipse.egit.ui 4 0 2017-04-09 23:00:37.758
+!MESSAGE Failed to refresh projects from index changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:977)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:960)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1594)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob$1.run(Activator.java:519)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob.run(Activator.java:504)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Contains: The project description file (.project) for '04-04' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 1 org.eclipse.core.resources 4 271 2017-04-09 23:00:37.761
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2017-04-09 23:00:37.761
+!MESSAGE The project description file (.project) for '04-04' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-09 23:01:15.414
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-09 23:01:15.415
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
