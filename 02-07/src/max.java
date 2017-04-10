@@ -9,7 +9,7 @@ public class max {
 	 *    Worst: n - 1,  f ∈ O(n-1) It is linear
 	 *    Average: n/a either one or the other
 	 */
-	public static int max(int[] arr) {
+	public static int max1(int[] arr) {
 		if (arr.length == 0) {
 			throw new IllegalArgumentException();
 		} else {

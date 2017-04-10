@@ -3,15 +3,20 @@
 public class Program {
 	public static Counter doWork(Counter c) {
 		c.increment();
+		System.out.println("2:" + c.value);
 		c = new Counter(); 
+		System.out.println("3:" + c.value);
 		// Point A 
 		c.increment();
 		c.increment();
+		System.out.println("4:" + c.value);
 		return c;
 	}
 	public static void main(String[] args) {
 		Counter c = new Counter(); 
+		System.out.println("1:" + c.value);
 		doWork(c);
+		System.out.println("5:" + c.value);
 		// Point B
 	} 
 }
